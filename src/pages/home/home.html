@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <img src="http://www.centennialcollege.ca/i/logo.svg" class="logo"> 
+  <h2>Mobile Applications Development</h2>
+
+<div [innerHTML]="(item | async)?.body">
+</div>
+
+<!-- 
+<ion-content padding>
+  <ion-card *ngFor="let card of content | async">
+    <ion-card-content>
+      <ion-card-title>
+        {{card.body}}
+				{{card.title}}
+      </ion-card-title>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+</div>-->
+
+ 
+</ion-content>

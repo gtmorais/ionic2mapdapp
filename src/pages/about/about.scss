@@ -1,0 +1,235 @@
+page-about {
+/* @function imageUrl($img){
+    return 'i/{$img}';
+} */
+/* @mixin opacity($var) {
+	filter: Alpha(opacity = $var * 100);	
+	opacity: $var;	
+} */
+/* @function em($pxval, $base: $base-font-size) {
+    @if not unitless($pxval) {
+        $pxval: strip-units($pxval);
+    }
+    @if not unitless($base) {
+        $base: strip-units($base);
+    }
+    @return ($pxval / $base) * 1em;
+} */
+.centraltext {
+    text-align: center;
+}
+.odd {
+    background-color: #f0f0f0; 
+    color: black;
+    width: 100%;
+}
+.panel {
+    width: 100%;
+}
+main.inner table, .responsive-tbl-cont {
+  clear: both; }
+  main.inner table.form-table th, main.inner table.form-table td, .responsive-tbl-cont.form-table th, .responsive-tbl-cont.form-table td {
+    padding: 10px 0; }
+  main.inner table tr.odd, main.inner table .tbl-row-cont.odd, .responsive-tbl-cont tr.odd, .responsive-tbl-cont .tbl-row-cont.odd {
+    background-color: #f0f0f0; }
+  main.inner table.bordered, .responsive-tbl-cont.bordered {
+    border: 1px solid #f0f0f0;
+    margin-bottom: 30px; }
+  main.inner table p, .responsive-tbl-cont p {
+    margin-top: 0; }
+
+.responsive-tbl-cont {
+  border: 1px solid #f0f0f0; }
+  .responsive-tbl-cont .tbl-row-cont {
+    display: table;
+    width: 100%;
+    padding: 10px 0; }
+  .responsive-tbl-cont .tbl-row {
+    display: table-row; }
+  .responsive-tbl-cont .label, .responsive-tbl-cont .data {
+    display: table-cell;
+    width: 50%;
+    vertical-align: top;
+    padding: 5px 2%; }
+  .responsive-tbl-cont a.btn {
+    background: none;
+    color: #0086be;
+    padding: 0;
+    text-align: left;
+    display: block; }
+    .responsive-tbl-cont a.btn.btn-none {
+      color: red; }
+    .responsive-tbl-cont a.btn:hover {
+      background: none;
+      color: inherit;
+      text-decoration: underline; }
+
+main.inner table {
+  width: 100%;
+  table-layout: fixed; }
+  main.inner table th {
+    background-color: #0096d4;
+    color: #fff; }
+    main.inner table th a {
+      color: inherit;
+      font-weight: 600; }
+  main.inner table th, main.inner table td, main.inner table .label, main.inner table .data {
+    text-align: left; }
+  main.inner table th, main.inner table td {
+    padding: 20px 5px 20px 15px;
+    vertical-align: middle;
+    word-break: break-word; }
+    @media only screen and (max-width: 767px) {
+      main.inner table th, main.inner table td {
+        padding: 10px 5px 10px 10px; } }
+  main.inner table td strong {
+    font-weight: 600; }
+  main.inner table.courses .odd {
+    background-color: #f0f0f0; }
+  main.inner table.courses .main-title {
+    width: 30%; }
+  main.inner table.course .main-title {
+    width: 25%; }
+  main.inner table.eligibility tbody td {
+    font-size: 0.9375em; }
+  main.inner table.conference .main-title {
+    min-width: 140px; }
+  main.inner table.course {
+    margin-bottom: 40px;
+    border: 1px solid #f0f0f0; }
+    main.inner table.course .gray {
+      background-color: #f1f1f1; }
+    @media only screen and (max-width: 767px) {
+      main.inner table.course .gray {
+        background-color: #0096d4;
+        color: #fff;
+        font-weight: 600; } }
+  main.inner table.courses-cart .action {
+    min-width: 160px; }
+  main.inner table.courses-cart td a.btn {
+    width: 100%; }
+  main.inner table.courses-cart tr > td:last-child {
+    padding-right: 10px; }
+  main.inner table.courses-cart tfoot td {
+    padding-top: 30px; }
+  @media only screen and (max-width: 1199px) {
+    main.inner table.courses-cart th, main.inner table.courses-cart td {
+      padding-left: 10px;
+      padding-right: 10px; } }
+  @media only screen and (max-width: 767px) {
+    main.inner table.collapsible td {
+      display: block;
+      width: 100% !important; } }
+  main.inner table.browse-programs {
+    /*.campus-title{
+			width: 25%;
+		}
+		.campus-name{
+			// width: 15%;
+		}
+		.course-cred{
+			width: 18%;
+		} */ }
+    main.inner table.browse-programs th {
+      width: 17%; }
+    main.inner table.browse-programs .course-title {
+      width: 26%; }
+    main.inner table.browse-programs .school-name {
+      width: 23%; }
+    main.inner table.browse-programs .start-date {
+      width: 15%; }
+    main.inner table.browse-programs tbody strong {
+      font-weight: 600; }
+
+body {
+  -webkit-print-color-adjust: exact;
+  font-family: "Open Sans", Helvetica, "Helvetica Neue", Arial, serif;
+  font-size: 12px; }
+
+.container {
+  width: 100% !important; }
+
+h1 {
+  font-size: 25px;
+  border-bottom: 1px dotted;
+  padding-bottom: 7px; }
+
+h2 {
+  margin: 20px 0 15px; }
+
+h3 {
+  margin: 0 0 10px; }
+
+a[href^="mailto:"] {
+  text-decoration: underline; }
+
+a[href^="tel"] {
+  text-decoration: none; }
+
+.mobile-nav, .page-header, .breadcrumb-container, aside.inner-aside, .page-footer, .main-carousel, .gutter-content {
+  display: none !important; }
+
+main.programs-and-courses {
+  /* .content h1{
+		display: none;
+	}
+	.page-title{
+		font-size: 25px;
+		font-weight: bold;
+		margin-bottom: 15px;
+	} */ }
+  main.programs-and-courses .pr-only {
+    display: block; }
+
+main.inner .inner-aside, main.inner .content {
+  width: 100% !important;
+  margin: 0 !important; }
+
+main.inner .course-info-media {
+  display: block; }
+
+.accordion .panel .panel-title, .accordion .panel .panel-body, .accordion .panel .tblCaption, .accordion .panel thead {
+  background-color: transparent !important;
+  padding-left: 0	!important;
+  padding-right: 0 !important; }
+
+.accordion .panel .panel-body {
+  display: block !important;
+  padding-top: 0;
+  padding-bottom: 0;
+  max-height: none !important; }
+  .accordion .panel .panel-body > p {
+    padding-left: 0; }
+
+.accordion .panel .panel-title {
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+  margin-bottom: 15px; }
+  .accordion .panel .panel-title a {
+    font-size: 1.0625em; }
+
+.accordion .panel a {
+  text-decoration: none !important; }
+
+main.inner table {
+  margin-bottom: 15px; }
+  main.inner table td, main.inner table th {
+    padding: 10px 0; }
+  main.inner table tr {
+    border: 1px solid #e3e3e3; }
+
+
+main.inner li {
+  margin: 5px 0; }
+
+/* .print-logo{
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-image: image_url('cent-logo-vertical.jpg');
+	background-color: $pear;
+	width: 33px;
+	height: 700px;
+} */
+
+}
