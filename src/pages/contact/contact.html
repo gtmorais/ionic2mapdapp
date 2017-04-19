@@ -1,22 +1,23 @@
-<!--<ion-header>
+<ion-header>
   <ion-navbar>
-    <connection></connection>
     <ion-title>Comments</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-card *ngFor="let card of comments | async" (click)="showOptions(card, card.$title)">
+   <button ion-button block outline [navPush]="commentPage">Add Comment</button>
+
+  <ion-card *ngFor="let card of comments | async" (click)="edit(card, card.$title)">
     <ion-card-content>
-      <ion-card-title>
-        {{card.title}}
-           <span class="bluetext">
-            {{card.date}}
-          </span>
-      </ion-card-title>
       <p>
-        {{card.body}}
+        {{card.title}}
+      </p>
+      <p>
+       {{card.body}}
+      </p>
+      <p>
+       {{card.date}}
       </p>
     </ion-card-content>
   </ion-card>
-</ion-content>-->
+</ion-content>

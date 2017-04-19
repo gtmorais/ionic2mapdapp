@@ -8,30 +8,30 @@ import { AngularFire } from 'angularfire2';
 //   Ionic pages and navigation.
 // */
 
-// class Comment {
-//   title: string
-//   body: string
-//   id: string
-//   date: string
-//   constructor() {
-//     this.date = new Date().toDateString();
-//   }
-// }
+class Comment {
+  title: string
+  body: string
+  id: string
+  date: string
+  constructor() {
+    this.date = new Date().toDateString();
+  }
+}
 
 @Component({
   selector: 'page-comment',
   templateUrl: 'comment.html'
 })
 export class CommentPage {
-//   comment: Comment = new Comment()
+   comment: Comment = new Comment()
   
    constructor(public navCtrl: NavController, private navParams: NavParams, public af: AngularFire) {
     
    }
 
-//   submit() {
-//       this.af.database.list('/comments').push(this.comment)
-//     this.comment = new Comment()
-//     this.navCtrl.parent.select(0)
-//   }
+  submit() {
+      this.af.database.list('/comments').push(this.comment)
+    this.comment = new Comment()
+    this.navCtrl.parent.select(2)
+  }
  }
