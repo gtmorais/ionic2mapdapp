@@ -1,24 +1,24 @@
 <ion-header>
+
   <ion-navbar>
-    <ion-title>
-      Professors
-    </ion-title>
+    <!--<ion-title>Teachers</ion-title>-->
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
   </ion-navbar>
+
 </ion-header>
 
-<ion-content>
-  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
-  <ion-list>
-    <ion-card *ngFor="let teacher of teachers">
-      <ion-card-content>
-        <ion-item>
-          {{teacher.name}}
-          
-        </ion-item>
-         <ion-item>
-            <!--<div [innerHTML]="{{teacher.profile}}"></div>-->
-           </ion-item>
-      </ion-card-content>
-    </ion-card>
-  </ion-list>
+
+<ion-content padding>
+  <ion-card *ngFor="let teacher of teachers">
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="assets/img/{{teacher.pictureLink}}">
+      </ion-avatar>
+      <h2>{{teacher.name}}</h2>
+      <p>{{teacher.email}}</p>
+    </ion-item>
+    <ion-card-content>
+     <p>{{teacher.course}}</p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
