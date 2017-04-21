@@ -23,9 +23,21 @@ page-about {
     color: black;
     width: 100%;
 }
+.even {
+    background-color: gray; 
+    color: black;
+    width: 100%;
+}
 .panel {
     width: 100%;
 }
+.alignicon {
+  text-align:center; 
+  background-color: transparent;
+}
+.topics tr { line-height: 20px; }
+
+
 main.inner table, .responsive-tbl-cont {
   clear: both; }
   main.inner table.form-table th, main.inner table.form-table td, .responsive-tbl-cont.form-table th, .responsive-tbl-cont.form-table td {
@@ -214,7 +226,7 @@ main.inner .course-info-media {
 main.inner table {
   margin-bottom: 15px; }
   main.inner table td, main.inner table th {
-    padding: 10px 0; }
+    padding: 14px 0; }
   main.inner table tr {
     border: 1px solid #e3e3e3; }
 

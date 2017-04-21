@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { ProfesssorPage } from "../professor/professor";
 
 @Component({
   selector: 'page-about',
@@ -9,8 +10,9 @@ import { NavController } from 'ionic-angular';
 
 export class AboutPage {
 public data: Data[];
+professsorPage : ProfesssorPage
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, ) {
 
   }
 
@@ -21,6 +23,9 @@ public data: Data[];
           // } else {
           //     data.showDetails = true;
           // }
+          
+        this.navCtrl.push(ProfesssorPage, { data: data });
+
       }
 }
 

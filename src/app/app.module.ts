@@ -7,6 +7,7 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { CommentPage } from '../pages/comment/comment';
+import { ProfesssorPage } from '../pages/professor/professor';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -30,6 +31,7 @@ const config = {
     ContactPage,
     HomePage,
     CommentPage,
+    ProfesssorPage,
     TabsPage
   ],
   imports: [
@@ -44,6 +46,7 @@ const config = {
     ContactPage,
     HomePage,
     CommentPage,
+    ProfesssorPage,
     TabsPage
   ],
   providers: [

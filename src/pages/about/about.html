@@ -9,21 +9,30 @@
 <ion-content padding>
 <div class="panel collapsed">											
 						<div id="panel panelTwo" class="panel-body" role="tabpanel" aria-labelledby="headingOne" style="display: block; max-height: none;">							
-										<div class="tblCaption panel" tabindex="0">Semester 1</div>
-											<table id="sem-1 panel" class="firstRow tablesorter panel" cellpadding="0" border="0">
+									
+							<ion-list>
+								<ion-item>
+								Semester 1
+								</ion-item>
+							</ion-list>
+
+											<table id="sem-1 panel " class="firstRow tablesorter panel topics" cellpadding="0" border="0">
 												<thead>
 													<tr>
-														<th class="accSort"><a href="">Course Code</a></th>
-														<th class="accSort"><a href="">Course Title</a></th>
-														<th class="accSort"><a href="">Location</a></th>
-                            <th class="accSort"><a href="">Hours/Week</a></th>
+														<th>Professor</th>
+														<th>Course Code</th>
+														<th>Course Title</th>
+                            <th>Hours/Week</th>
 													</tr>
 												</thead>
 																	<tbody>
                                     <tr class="not-belongsto odd">
-																		<td class="course-code"><span (click)="toggleDetails('a')">MAPD-111</span></td>
+																	  <td class="alignicon">
+																					<button fab-center class="fab-center alignicon" (click)="toggleDetails('111')"><ion-icon name="ios-contact-outline" fab-center></ion-icon></button>
+																		</td>
+																		<td class="course-code"><span >MAPD-111</span></td>
 																		<td class="course-name">Samsung Android Application Development</td>
-																		<td class="campus">Progress Campus</td>
+																		
                                     <td class="centraltext">4</td>
 																	</tr>
                                   <tr><td colspan="4">
@@ -31,70 +40,102 @@
                                         Here are some details for the title. 
                                     </div>
                                     </td></tr>
-																	<tr class="not-belongsto">
-																		<td class="course-code"><a href="/programs-courses/full-time/course/web-technoogies-for-mobile-platforms/">MAPD-112</a></td>
+																	<tr class="not-belongsto even">
+																	<td class="alignicon">
+																					<button fab-center class="fab-center alignicon" (click)="toggleDetails('112')"><ion-icon name="ios-contact-outline" fab-center></ion-icon></button>
+																		</td>
+																		<td class="course-code">MAPD-112</td>
 																		<td class="course-name">Web Technologies for Mobile Platforms</td>
-																		<td class="campus">Progress Campus</td>
+																		
                                     <td class="centraltext">4</td>
 																	</tr>
 																	<tr class="not-belongsto odd">
-																		<td class="course-code"><a href="/programs-courses/full-time/course/enterprise-technologies-for-mobile-platforms/">MAPD-113</a></td>
+																		<td class="alignicon">
+																					<button fab-center class="fab-center alignicon" (click)="toggleDetails('113')"><ion-icon name="ios-contact-outline" fab-center></ion-icon></button>
+																		</td>
+																		<td class="course-code">MAPD-113</td>
 																		<td class="course-name">Enterprise Technologies for Mobile Platforms</td>
-																		<td class="campus">Progress Campus</td>
+																		
                                      <td class="centraltext">4</td>
 																	</tr>
-																	<tr class="not-belongsto">
-																		<td class="course-code"><a href="/programs-courses/full-time/course/ios-development/">MAPD-114</a></td>
+																	<tr class="not-belongsto even">
+																		<td class="alignicon">
+																					<button fab-center class="fab-center alignicon" (click)="toggleDetails('114')"><ion-icon name="ios-contact-outline" fab-center></ion-icon></button>
+																		</td>
+																		<td class="course-code">MAPD-114</td>
 																		<td class="course-name">iOS Development</td>
-																		<td class="campus">Progress Campus</td> 
+																	  
                                     <td class="centraltext">4</td>
 																	</tr>
 																	<tr class="not-belongsto odd">
-																		<td class="course-code"><a href="/programs-courses/full-time/course/mobile-application-ui-ux-design/">MAPD-115</a></td>
+																		<td class="alignicon">
+																					<button fab-center class="fab-center alignicon" (click)="toggleDetails('115')"><ion-icon name="ios-contact-outline" fab-center></ion-icon></button>
+																		</td>
+																		<td class="course-code">MAPD-115</td>
 																		<td class="course-name">Mobile Application UI/UX Design</td>
-																		<td class="campus">Progress Campus</td>
+																	 
                                     <td class="centraltext">4</td>
 																	</tr>
 
 										</tbody></table>
-										<div class="tblCaption panel" tabindex="0">Semester 2</div>
-											<table id="sem-2" class="firstRow tablesorter panel" cellpadding="0" border="0">
+										<br />
+										<ion-list>
+											<ion-item>
+ 	 										Semester 2
+											</ion-item>
+										</ion-list>
+
+											<table id="sem-2" class="firstRow tablesorter panel topics" cellpadding="0" border="0">
 												<thead>
 													<tr>
-														<th class="accSort"><a href="">Course Code</a></th>
-														<th class="accSort"><a href="">Course Title</a></th>
-														<th class="accSort"><a href="">Location</a></th>
-                            <th class="accSort"><a href="">Hours/Week</a></th>
+														<th>Professor</th>
+														<th>Course Code</th>
+														<th>Course Title</th>
+                            <th>Hours/Week</th>
 													</tr>
 												</thead>
 																	<tbody><tr class="not-belongsto odd">
-																		<td class="course-code"><a href="/programs-courses/full-time/course/samsung-advanced-android-development/">MAPD-121</a></td>
+																		<td class="alignicon">
+																					<button fab-center class="fab-center alignicon" (click)="toggleDetails('121')"><ion-icon name="ios-contact-outline" fab-center></ion-icon></button>
+																		</td>
+																		<td class="course-code">MAPD-121</td>
 																		<td class="course-name">Samsung Advanced Android Development</td>
-																		<td class="campus">Progress Campus</td>
                                     <td class="centraltext">4</td>
 																	</tr>
-																	<tr class="not-belongsto">
-																		<td class="course-code"><a href="/programs-courses/full-time/course/mobile-web-development/">MAPD-122</a></td>
+																	<tr class="not-belongsto even">
+																		<td class="alignicon">
+																					<button fab-center class="fab-center alignicon" (click)="toggleDetails('122')"><ion-icon name="ios-contact-outline" fab-center></ion-icon></button>
+																		</td>
+																		<td class="course-code">MAPD-122</td>
 																		<td class="course-name">Mobile Web Development</td>
-																		<td class="campus">Progress Campus</td>
+																	 
                                     <td class="centraltext">4</td>
 																	</tr>
 																	<tr class="not-belongsto odd">
-																		<td class="course-code"><a href="/programs-courses/full-time/course/advanced-ios-development/">MAPD-124</a></td>
+																			<td class="alignicon">
+																					<button fab-center class="fab-center alignicon" (click)="toggleDetails('124')"><ion-icon name="ios-contact-outline" fab-center></ion-icon></button>
+																		</td>
+																		<td class="course-code">MAPD-124</td>
 																		<td class="course-name">Advanced iOS Development</td>
-																		<td class="campus">Progress Campus</td>
+																	 
                                     <td class="centraltext">4</td>
 																	</tr>
-																	<tr class="not-belongsto">
-																		<td class="course-code"><a href="/programs-courses/full-time/course/emerging-technologies/">MAPD-125</a></td>
+																	<tr class="not-belongsto even">
+																			<td class="alignicon">
+																					<button fab-center class="fab-center alignicon" (click)="toggleDetails('125')"><ion-icon name="ios-contact-outline" fab-center></ion-icon></button>
+																		</td>
+																		<td class="course-code">MAPD-125</td>
 																		<td class="course-name">Emerging Technologies</td>
-																		<td class="campus">Progress Campus</td>
+																	 
                                     <td class="centraltext">4</td>
 																	</tr>
 																	<tr class="not-belongsto odd">
-																		<td class="course-code"><a href="/programs-courses/full-time/course/mobile-application-development-project/">MAPD-212</a></td>
+																			<td class="alignicon">
+																					<button fab-center class="fab-center alignicon" (click)="toggleDetails('212')"><ion-icon name="ios-contact-outline" fab-center></ion-icon></button>
+																		</td>
+																		<td class="course-code">MAPD-212</td>
 																		<td class="course-name">Mobile Application Development Project</td>
-																		<td class="campus">Progress Campus</td>
+																	 
                                     <td class="centraltext">4</td>
 																	</tr> 
 										</tbody></table>

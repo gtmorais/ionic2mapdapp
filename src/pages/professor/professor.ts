@@ -3,11 +3,11 @@ import { NavController, ActionSheetController } from 'ionic-angular';
 import { AngularFire, FirebaseListObservable , FirebaseObjectObservable } from 'angularfire2'
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-professor',
+  templateUrl: 'professor.html'
 })
 
-export class HomePage {
+export class ProfesssorPage {
 content: FirebaseListObservable<any>
 item: FirebaseObjectObservable<any>
 
