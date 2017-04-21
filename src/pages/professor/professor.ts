@@ -1,23 +1,58 @@
-import { Component } from '@angular/core';
-import { NavController, ActionSheetController } from 'ionic-angular';
-import { AngularFire, FirebaseListObservable , FirebaseObjectObservable } from 'angularfire2'
+import { Component, OnInit } from '@angular/core';
+import { NavController, NavParams } from 'ionic-angular';
+import { AngularFire, FirebaseListObservable  } from 'angularfire2'
 
 @Component({
   selector: 'page-professor',
   templateUrl: 'professor.html'
 })
 
-export class ProfesssorPage {
-content: FirebaseListObservable<any>
-item: FirebaseObjectObservable<any>
+export class ProfesssorPage implements OnInit {
+  professorsFB: FirebaseListObservable<any>;
+  teachers : any;
+  parameter : string;
+  searchQuery: string = '';
+  items: string[];
 
-  constructor(public navCtrl: NavController, public af: AngularFire,
-    public actionSheetCtrl: ActionSheetController) {
-    this.content = af.database.list('/content')
-    this.item = af.database.object('/content/-Kgaulzbe7dHNjVFhban');
+  constructor(public navCtrl: NavController,
+              public af: AngularFire,
+              private navParams: NavParams) {
+      this.professorsFB = af.database.list('/teachers'); 
 
-    console.log(this.item);
-
-    //alert(this.content.subscribe(x => console.log(x.title)))
+      var parameter = navParams.get('data'); 
+      if (parameter && parameter.trim() != "")
+        this.parameter = parameter;
   }
+
+  ngOnInit() {
+      this.professorsFB.subscribe(teachers => {
+        console.log(teachers);
+        this.teachers = teachers;
+      });
+
+      if (this.parameter)
+      {
+          // this.teachers = this.teachers.filter((teachers) => {
+          //   return (teachers.name.indexOf(this.parameter) > -1);
+          // });
+      }
+  }
+
+  getItems(ev: any) {
+    let val = ev.target.value;
+
+    if (val && val.trim() != '') {
+      this.teachers = this.teachers.filter((teachers) => {
+        return (teachers.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
+      })
+    }
+    else
+    {
+        this.professorsFB.subscribe(teachers => {
+          console.log(teachers);
+          this.teachers = teachers;
+        });
+    }
+  }
+
 }

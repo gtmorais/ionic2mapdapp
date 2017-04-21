@@ -12,23 +12,19 @@ export class AboutPage {
 public data: Data[];
 professsorPage : ProfesssorPage
 
-  constructor(public navCtrl: NavController, ) {
+  constructor(public navCtrl: NavController) {
 
   }
 
   toggleDetails(data: string) {
-          alert(data);
           // if (data.showDetails) {
           //     data.showDetails = false;
           // } else {
           //     data.showDetails = true;
-          // }
-          
+          // }          
         this.navCtrl.push(ProfesssorPage, { data: data });
-
       }
 }
-
 
 export class Data {
     constructor(public title: string, public details: string, public showDetails: boolean) {}
